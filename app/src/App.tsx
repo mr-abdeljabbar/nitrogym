@@ -733,7 +733,7 @@ function App() {
           </div>
 
           <div className="font-mono text-xs uppercase tracking-wider text-white/40">
-            © GYM NITRO • 5-STAR RATED • 0700-789623
+            © GYM NITRO • 5-STAR RATED • 0700-789623 • Developed by <a href="https://abdeljabar.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-accent transition-colors underline underline-offset-4">Abdeljabar.com</a>
           </div>
         </div>
       </footer>
