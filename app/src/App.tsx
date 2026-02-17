@@ -723,6 +723,8 @@ function App() {
               <a
                 key={index}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-4 rounded-full bg-white/5 hover:bg-red-accent/20 hover:text-red-accent transition-all hover:-translate-y-1"
               >
                 <social.icon size={24} />
