@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import {
   Menu, X, Phone, MapPin, Clock, Star,
-  Instagram, Facebook, Youtube, ChevronRight,
+  Instagram, Facebook, ChevronRight,
   Dumbbell, Flame, Heart
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -717,9 +717,8 @@ function App() {
 
           <div className="flex justify-center gap-6 mb-12">
             {[
-              { icon: Instagram, href: '#' },
-              { icon: Facebook, href: '#' },
-              { icon: Youtube, href: '#' },
+              { icon: Instagram, href: 'https://www.instagram.com/gym_nitro/' },
+              { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=100062858802100#' },
             ].map((social, index) => (
               <a
                 key={index}
