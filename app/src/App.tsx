@@ -202,19 +202,24 @@ function App() {
       )}
 
       {/* Section 1: Hero */}
-      <section className="min-h-screen bg-navy-dark relative z-10">
+      <section className="min-h-[100dvh] bg-navy-dark relative z-10 overflow-hidden">
         <div className="absolute inset-0">
           {/* Background Image */}
           <img
+            src="/background_phone.jpg"
+            alt="Gym Background Mobile"
+            className="w-full h-full object-cover block sm:hidden"
+          />
+          <img
             src="/background.jpg"
-            alt="Gym Background"
-            className="w-full h-full object-cover"
+            alt="Gym Background Desktop"
+            className="w-full h-full object-cover hidden sm:block"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/90 via-navy-dark/70 to-navy-dark/50" />
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-16 pt-20">
+        <div className="relative z-10 h-[100dvh] flex flex-col lg:flex-row items-center justify-center px-6 lg:px-16 pt-20">
           {/* Left: Logo & Quote */}
           <div className="lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left mb-8 lg:mb-0">
             <img
@@ -263,17 +268,22 @@ function App() {
       </section>
 
       {/* Section 2: Motivation */}
-      <section className="min-h-screen relative z-20">
+      <section className="min-h-[100dvh] relative z-20 overflow-hidden">
         <div className="absolute inset-0">
           <img
+            src="/trainer0_phone.jpg"
+            alt="Workout Mobile"
+            className="w-full h-full object-cover block sm:hidden"
+          />
+          <img
             src="/trainer0.jpg"
-            alt="Workout"
-            className="w-full h-full object-cover"
+            alt="Workout Desktop"
+            className="w-full h-full object-cover hidden sm:block"
           />
           <div className="absolute inset-0 bg-navy-dark/70" />
         </div>
 
-        <div id="motivation" className={`animate-on-scroll relative z-10 h-screen flex flex-col items-center justify-center text-center px-6 transition-all duration-1000 ${isVisible('motivation') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
+        <div id="motivation" className={`animate-on-scroll relative z-10 h-[100dvh] flex flex-col items-center justify-center text-center px-6 transition-all duration-1000 ${isVisible('motivation') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
           <div>
             <h2 className="headline-xl text-white text-5xl sm:text-6xl lg:text-7xl xl:text-8xl">NO PAIN</h2>
             <h2 className="headline-xl text-red-accent text-5xl sm:text-6xl lg:text-7xl xl:text-8xl">NO GAIN</h2>
@@ -291,7 +301,7 @@ function App() {
       </section>
 
       {/* Section 3: Programs */}
-      <section id="programs" className={`animate-on-scroll min-h-screen bg-navy-dark z-30 py-20 lg:py-0 flex items-center transition-all duration-1000 ${isVisible('programs') ? 'opacity-100' : 'opacity-0'}`}>
+      <section id="programs" className={`animate-on-scroll min-h-[100dvh] bg-navy-dark z-30 py-20 lg:py-0 flex items-center transition-all duration-1000 ${isVisible('programs') ? 'opacity-100' : 'opacity-0'}`}>
         <div className="w-full flex flex-col lg:flex-row items-center px-6 lg:px-16">
           {/* Left Content */}
           <div className={`lg:w-[45%] mb-12 lg:mb-0 transition-all duration-1000 delay-100 ${isVisible('programs') ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'}`}>
@@ -348,17 +358,22 @@ function App() {
       </section>
 
       {/* Section 4: Trainers */}
-      <section id="trainers" className="min-h-screen relative z-40">
+      <section id="trainers" className="min-h-[100dvh] relative z-40 overflow-hidden">
         <div className="absolute inset-0">
+          <img
+            src="/trainer1_phone.png"
+            alt="PRO Trainer Yassine Mobile"
+            className="w-full h-full object-cover object-top block sm:hidden"
+          />
           <img
             src="/trainer1.png"
             alt="PRO Trainer Yassine"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover object-top hidden sm:block"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/90 via-navy-dark/60 to-transparent" />
         </div>
 
-        <div id="trainer-section" className={`animate-on-scroll relative z-10 h-screen flex flex-col justify-center px-6 lg:px-16 transition-all duration-1000 ${isVisible('trainer-section') ? 'opacity-100' : 'opacity-0'}`}>
+        <div id="trainer-section" className={`animate-on-scroll relative z-10 h-[100dvh] flex flex-col justify-center px-6 lg:px-16 transition-all duration-1000 ${isVisible('trainer-section') ? 'opacity-100' : 'opacity-0'}`}>
           <div className={`transition-all duration-1000 delay-100 ${isVisible('trainer-section') ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'}`}>
             <h2 className="headline-lg text-white text-5xl sm:text-6xl lg:text-7xl xl:text-8xl">TRAIN</h2>
             <h2 className="headline-lg text-red-accent text-5xl sm:text-6xl lg:text-7xl xl:text-8xl mb-8">INSANE</h2>
@@ -383,17 +398,22 @@ function App() {
       </section>
 
       {/* Section 5: Nutrition */}
-      <section className="min-h-screen relative z-50">
+      <section className="min-h-[100dvh] relative z-50 overflow-hidden">
         <div className="absolute inset-0">
           <img
+            src="/healthy_meal_phone.jpg"
+            alt="Healthy Meal Mobile"
+            className="w-full h-full object-cover block sm:hidden"
+          />
+          <img
             src="/healthy_meal.jpg"
-            alt="Healthy Meal"
-            className="w-full h-full object-cover"
+            alt="Healthy Meal Desktop"
+            className="w-full h-full object-cover hidden sm:block"
           />
           <div className="absolute inset-0 bg-gradient-to-l from-navy-dark/80 via-navy-dark/50 to-transparent" />
         </div>
 
-        <div id="nutrition" className={`animate-on-scroll relative z-10 h-screen flex flex-col items-end justify-center px-6 lg:px-16 text-right transition-all duration-1000 ${isVisible('nutrition') ? 'opacity-100' : 'opacity-0'}`}>
+        <div id="nutrition" className={`animate-on-scroll relative z-10 h-[100dvh] flex flex-col items-end justify-center px-6 lg:px-16 text-right transition-all duration-1000 ${isVisible('nutrition') ? 'opacity-100' : 'opacity-0'}`}>
           <div className={`transition-all duration-1000 delay-100 ${isVisible('nutrition') ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'}`}>
             <h2 className="headline-lg text-white text-5xl sm:text-6xl lg:text-7xl xl:text-8xl">EAT</h2>
             <h2 className="headline-lg text-red-accent text-5xl sm:text-6xl lg:text-7xl xl:text-8xl mb-8">CLEAN</h2>

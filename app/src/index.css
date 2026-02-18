@@ -123,8 +123,16 @@
 .section-pinned {
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   position: relative;
   overflow: hidden;
+}
+
+/* iOS Image Optimization */
+section img {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 /* Button styles */
